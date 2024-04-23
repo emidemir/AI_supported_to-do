@@ -1,0 +1,22 @@
+### UNRELATED ###
+Plans/
+
+### CLIENT ###
+.DS_*
+*.log
+logs
+**/*.backup.*
+**/*.back.*
+
+node_modules
+bower_components
+
+*.sublime*
+
+psd
+thumb
+sketch
+
+### SERVER ###
+/node_modules/
+

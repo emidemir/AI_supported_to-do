@@ -20,7 +20,7 @@ export default function App() {
 		<ThemeProvider theme={theme}>
 			<BrowserRouter>
 				<Routes>
-					<Route path="/Home" element={<Home/>}></Route>
+					<Route path="/" element={<Home/>}></Route>
 					<Route path="/Signin" element={<Signin/>}></Route>
 					<Route path="/Signup" element={<Signup/>}></Route>
 					<Route path="/Profile" element={<Profile/>}></Route>

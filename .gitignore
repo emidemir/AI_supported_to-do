@@ -31,3 +31,5 @@ sketch
 ### SERVER ###
 /node_modules/
 
+###IMAGES###
+*.jpg

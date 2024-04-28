@@ -1,9 +1,25 @@
-function App() {
-  return (
-    <div className="App">
-      
-    </div>
-  );
-}
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from './pages/Home'
+import Signin from './pages/Signin'
+import Signup from './pages/Signup'
+import Profile from './pages/Profile'
+import Sofar from './pages/Sofar'
+import Statistics from './pages/Statistics'
+import Todo from './pages/Todo'
 
-export default App;
+
+export default function App(){
+	return (
+		<BrowserRouter>
+			<Routes>
+				<Route path="/" element={<Home/>}></Route>
+				<Route path="/Signin" element={<Signin/>}></Route>
+				<Route path="/Signup" element={<Signup/>}></Route>
+				<Route path="/Profile" element={<Profile/>}></Route>
+				<Route path="/Sofar" element={<Sofar/>}></Route>
+				<Route path="/Statistics" element={<Statistics/>}></Route>
+				<Route path="/Todo" element={<Todo/>}></Route>
+			</Routes>
+		</BrowserRouter>
+	);
+}
